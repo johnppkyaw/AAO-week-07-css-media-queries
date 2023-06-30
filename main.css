@@ -102,4 +102,12 @@ header {
 
 /* Phase 2 */
 
-/* Your code here */
+@media print {
+    header, .sidebar, .image-box {
+        display: none;
+    }
+    .story-box {
+        all: unset;
+        background-color: rgb(255, 255, 255);
+    }
+}
