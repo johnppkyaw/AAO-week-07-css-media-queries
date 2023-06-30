@@ -103,11 +103,20 @@ header {
 /* Phase 2 */
 
 @media print {
-    header, .sidebar, .image-box {
+    header, .sidebar {
         display: none;
     }
     .story-box {
         all: unset;
         background-color: rgb(255, 255, 255);
+    }
+    .image-box img {
+        position: absolute;
+        height: 50px;
+        width: 100px;
+
+        border-radius: 0 55px;
+        top: 2rem;
+        right: 2rem;
     }
 }
